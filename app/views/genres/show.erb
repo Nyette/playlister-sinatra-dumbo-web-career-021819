@@ -1,0 +1,8 @@
+<%= @genre.name %>
+
+<p>Delete this genre?</p>
+
+<form method="post" action="/genres/<%= @genre.id %>">
+  <input type="hidden" id="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form>

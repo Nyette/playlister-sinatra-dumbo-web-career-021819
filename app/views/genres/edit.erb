@@ -1,0 +1,6 @@
+<form method="post" action="/genres/<%= @genre.id %>">
+  <input type="hidden" id="hidden" name="_method" value="PATCH">
+  <label for="name">Name: </label>
+  <input type="text" name="genre[name]" id="name" value="<%= @genre.name %>">
+  <input type="submit" value="Submit">
+</form>

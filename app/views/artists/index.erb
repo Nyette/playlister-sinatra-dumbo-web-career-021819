@@ -1,0 +1,9 @@
+<h1>All artists</h1>
+
+<% @artists.each do |artist| %>
+
+<p><a href="/artists/<%= song.id %>"><%= artist.name %></a></p>
+
+<% end %>
+
+<p><a href="/artists/new">Create a new song</a></p>
